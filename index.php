@@ -30,7 +30,7 @@
 			<div id="box4" class="box"></div>
 		</div>
 		<div id="startreset">
-			Begin Game
+			Get Cracking!
 		</div>
 		<div id="timeremaining">Time remaining:
 		    <span id="timeremainingvalue">60</span> sec
