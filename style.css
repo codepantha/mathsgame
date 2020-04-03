@@ -1,0 +1,180 @@
+html {
+	height: 100%;
+	background: radial-gradient(circle, #fff, #ccc);
+	background: -webkit-radial-gradient(circle, #fff, #ccc);
+	background: -o-radial-gradient(circle, #fff, #ccc);
+	background: -moz-radial-gradient(circle, #fff, #ccc);
+}
+
+#container {
+	height: 400px;
+	width: 550px;
+	background-color: #9dd2ea;
+	margin: 100px auto;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 0 0 #009de4;
+	-webkit-box-shadow: 0px 4px 0 0 #009de4;
+	-moz-box-shadow: 0px 4px 0 0 #009de4;
+	position: relative;
+}
+
+#score {
+	background-color: #F1FF92;
+	color: #888E5F;
+	padding: 10px;
+	position: absolute;
+	left: 500px;
+	box-shadow: 0px 4px 0px #9da853;
+	-webkit-box-shadow: 0px 4px 0px #9da853;
+	-moz-box-shadow: 0px 4px 0px #9da853;
+}
+
+#correct {
+	position: absolute;
+	background-color: #42e252;
+	color: #fff;
+	left: 260px;
+	padding: 11px;
+	display: none;
+}
+
+#wrong {
+	position: absolute;
+	background-color: #de401a;
+	color: #fff;
+	left: 100px;
+	padding: 11px;
+	display: none;
+}
+
+#question {
+    height: 146px;
+    width: 450px;
+    background-color: #9da0ea;
+    margin: 50px auto 10px auto;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: #000;
+    box-shadow: 0px 4px #535aa8;
+    -webkit-box-shadow: 0px 4px #535aa8;
+    -moz-box-shadow: 0px 4px #535aa8;
+}
+
+
+#instruction {
+    width: 450px;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center;
+    background: #c99dea;
+    line-height: 45px;
+    box-shadow: 0px 4px #8153a8;
+    -webkit-box-shadow: 0px 4px #8153a8;
+    -moz-box-shadow: 0px 4px #8153a8;
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    /*border: 1px solid;*/
+    margin: 5px auto;
+}
+
+.box {
+	width: 85px;
+	height: 85px;
+	background-color: #fff;
+	float: left;
+	margin-right: 36px;
+	border-radius: 3px;
+	cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    /*for browser compatibility*/
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover, #startreset:hover {
+	/*background-color: #9c89f6;
+	color: #fff;
+	box-shadow: 0px 4px #6b54d3;
+	-webkit-box-shadow: 0px 4px #6b54d3;
+	-moz-box-shadow: 0px 4px #6b54d3;*/
+}
+
+.box:active, #startreset:active {
+	background-color: #9c89f6;
+	box-shadow: 0px 0px #6b54d3;
+	-webkit-box-shadow: 0px 0px #6b54d3;
+	-moz-box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+
+#box4 {
+	margin-right: 0px;
+}
+
+#startreset {
+	width: 85px;
+	padding: 10px;
+    margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 3px;
+	cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    /*for browser compatibility*/
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+#timeremaining {
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 395px;
+    left: 365px;
+    background-color: rgba(181, 235, 36, 0.8);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+/*    visibility: hidden;*/
+    display: none;
+}
+
+#gameOver {
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#f3ca68, #f3706c);
+    -webkit-background: linear-gradient(#f3ca68, #f3706c);
+    -moz-background: linear-gradient(#f3ca68, #f3706c);
+    -o-background: linear-gradient(#f3ca68, #f3706c);
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+/*    other elements have a default z-index = 0 so we're gonna make this one something > 0 so that this appears on top of d other elements*/
+    z-index: 2;
+    display: none;
+}
